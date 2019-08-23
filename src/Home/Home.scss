@@ -10,7 +10,7 @@
 
   h1 {
     color: $fontColor;
-    font-size: 10rem;
+    font-size: $nameSize;
     grid-area: name;
     letter-spacing: .4rem;
     margin: 0;

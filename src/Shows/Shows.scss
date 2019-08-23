@@ -1,0 +1,32 @@
+.Shows {
+
+  section {
+    display: grid;
+    grid-template-areas: 'shows pic'
+    'name pic';
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 75% 25%;
+    height: 80vh;
+    padding: 10px;
+  
+    h1 {
+      color: $transparentMedAccent;
+      font-size: $nameSize;
+      grid-area: name;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  
+    div {
+      color: $fontColor;
+      grid-area: shows;
+      margin: auto;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        color: $medAccent;
+      }
+    }
+  }
+}
