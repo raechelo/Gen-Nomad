@@ -1,0 +1,21 @@
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  
+  .navlink {
+    color: $fontColor;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}

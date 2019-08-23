@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Press() {
+export default function Shows() {
   return (
-    <section className="Press">
+    <section className="Shows">
       
     </section>
   )
