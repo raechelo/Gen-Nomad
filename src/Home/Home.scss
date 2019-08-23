@@ -1,0 +1,49 @@
+.Home {
+  display: grid;
+  grid-template-areas: 'nav pic'
+  'name pic';
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 65% 45%;
+  height: 80vh;
+  padding: 10px;
+
+
+  h1 {
+    color: $fontColor;
+    font-size: 10rem;
+    grid-area: name;
+    letter-spacing: .4rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 4px 4px $darkAccent;
+  }
+
+  .Home-Nav {
+    margin: auto;
+  }
+
+  .navlink {
+    color: $lightAccent;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 3px 3px 3px darken($background, 30%);
+    }
+  }
+
+  img {
+    margin: auto;
+    width: 90%;
+  }
+}

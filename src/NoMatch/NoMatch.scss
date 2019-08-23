@@ -1,0 +1,54 @@
+.NoMatch {
+  display: grid;
+  grid-template-areas: 'btn pic'
+  'name pic';
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 75% 25%;
+  height: 70vh;
+  padding: 10px;
+
+  h1 {
+    grid-area: name;
+    font-size: 10rem;
+    margin: 0;
+    color: $transparentMedAccent;
+    text-transform: uppercase;
+  }
+
+  div {
+    margin: auto;
+    text-align: center;
+    grid-area: btn;
+  }
+
+  img {
+    width: 85%;
+  }
+
+  h3 {
+    color: $fontColor;
+  }
+
+  .back-btn {
+    background-color: transparent;
+    border: 2px solid $medAccent;
+    padding: 10px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $medAccent;
+      color: white;
+      cursor: pointer;
+      box-shadow: 3px 3px 3px darken($background, 30%);
+    }
+  }
+
+  .back-btn-link {
+    color: $fontColor;
+    text-decoration: none;
+
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
