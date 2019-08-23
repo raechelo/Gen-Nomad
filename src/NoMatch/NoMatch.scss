@@ -9,7 +9,7 @@
 
   h1 {
     grid-area: name;
-    font-size: 10rem;
+    font-size: $nameSize;
     margin: 0;
     color: $transparentMedAccent;
     text-transform: uppercase;

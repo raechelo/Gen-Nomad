@@ -1,10 +1,9 @@
 import React from 'react';
 import Nav from './../Nav/Nav';
 
-
-export default function Contact() {
+export default function Listen() {
   return (
-    <section className="Contact">
+    <section className="Listen">
       <Nav />
     </section>
   )
