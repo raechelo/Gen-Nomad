@@ -1,0 +1,103 @@
+.Contact {
+  padding: 10px;
+  color: white;
+
+  section {
+    display: grid;
+    grid-template-areas: 'logo logo'
+    'form social'
+    'name name';
+    grid-template-rows: 10% 50% 40%;
+    grid-template-columns: 50% 50%;
+    height: $pageHeight;
+  }
+
+  .logo {
+    margin: auto;
+    text-align: center;
+    grid-area: logo;
+
+    img {
+      width: $logoWidth;
+    }
+  }
+
+  h1 {
+    color: $transparentLightAccent;
+    font-size: $nameSize;
+    grid-area: name;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  form {
+    grid-area: form;
+    width: 50%;
+    margin: auto;
+
+    label {
+      display: block;
+      margin: .2rem 0;
+    }
+
+    input, textarea {
+      background-color: transparent;
+      color: white;
+      border: 2px solid $transparentLightAccent;
+      padding-right: 5px;
+      width: 100%;
+    }
+
+    .msg {
+      height: 4rem;
+      width: 100%;
+    }
+
+    button {
+      background-color: $transparentLightAccent;
+      border: 2px solid $transparentLightAccent;
+      display: block;
+      margin: 1rem 0;
+
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .social {
+    grid-area: social;
+    display: grid;
+    grid-template-areas: 'fb insta'
+    'twit gmail';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+
+    a {
+      margin: auto;
+      width: 40%;
+
+      img {
+        margin: 1rem auto;
+      }
+    }
+
+    .fb {
+      grid-area: fb;
+    }
+
+    .insta {
+      grid-area: insta;
+    }
+
+    .twit {
+      grid-area: twit;
+    }
+
+    .gmail {
+      grid-area: gmail;
+    }
+  }
+}
