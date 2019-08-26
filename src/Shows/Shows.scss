@@ -1,13 +1,13 @@
 .Shows {
+  padding: 10px;
 
   section {
     display: grid;
-    grid-template-areas: 'shows pic'
-    'name pic';
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 75% 25%;
-    height: 80vh;
-    padding: 10px;
+    grid-template-areas: 'shows pic1'
+    'name pic2';
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 60% 40%;
+    height: $pageHeight;
   
     h1 {
       color: $transparentMedAccent;
@@ -16,11 +16,33 @@
       margin: 0;
       text-transform: uppercase;
     }
+
+    .logo {
+      width: $logoWidth;
+    }
+
+    .pic1 {
+      grid-area: pic1;
+      height: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .pic2 {
+      grid-area: pic2;
+      height: 100%;
+      margin-top: 1rem;
+    }
+
+    .right-align {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+    }
   
-    div {
+    .show-info {
       color: $fontColor;
       grid-area: shows;
-      margin: auto;
+      margin: 0 auto;
       text-align: center;
 
       h3 {

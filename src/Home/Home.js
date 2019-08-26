@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <section className="Home">
       <nav className="Home-Nav">
-        <NavLink to='/' className="navlink"><img src={logo} alt="Generation Nomad logo" /></NavLink>
+        <NavLink to='/' className="navlink"><img src={logo} alt="Generation Nomad logo" className="logo"  /></NavLink>
         <NavLink to='/listen' className="navlink"><h3>Listen</h3></NavLink>
         <NavLink to='/shows' className="navlink"><h3>Shows</h3></NavLink>
         <NavLink to='/press' className="navlink"><h3>Press</h3></NavLink>

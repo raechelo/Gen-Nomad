@@ -4,7 +4,7 @@
   'name pic';
   grid-template-columns: 40% 60%;
   grid-template-rows: 75% 25%;
-  height: 70vh;
+  height: $pageHeight;
   padding: 10px;
 
   h1 {

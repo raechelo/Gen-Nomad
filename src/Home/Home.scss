@@ -4,7 +4,7 @@
   'name pic';
   grid-template-columns: 40% 60%;
   grid-template-rows: 65% 45%;
-  height: 80vh;
+  height: $pageHeight;
   padding: 10px;
 
 
@@ -40,6 +40,10 @@
       text-decoration: underline;
       text-shadow: 3px 3px 3px darken($background, 30%);
     }
+  }
+
+  .logo {
+    width: $logoWidth;
   }
 
   img {

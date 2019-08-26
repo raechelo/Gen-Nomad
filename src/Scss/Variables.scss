@@ -1,7 +1,9 @@
 // fonts
 $bodyfont: 'Lexend Deca', sans-serif;
 
-$nameSize: 10rem;
+$nameSize: 9rem;
+$pageHeight: 80vh;
+$logoWidth: 6rem;
 
 // animations
 
@@ -15,5 +17,5 @@ $transparentLightAccent: hsla(35, 41%, 73%, .2);
 $lightAccent: hsl(35, 41%, 73%);
 $transparentMedAccent: hsla(195, 50%, 32%, .2);
 $medAccent: hsl(195, 50%, 32%);
-$transparentDarkAccent: hsla(0, 55%, 15%, .2);
+$transparentDarkAccent: hsla(0, 55%, 15%, .4);
 $darkAccent: hsl(0, 55%, 15%);
