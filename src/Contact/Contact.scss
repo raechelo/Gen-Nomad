@@ -7,7 +7,7 @@
     grid-template-areas: 'logo logo'
     'form social'
     'name name';
-    grid-template-rows: 10% 50% 40%;
+    grid-template-rows: 10% 45% 45%;
     grid-template-columns: 50% 50%;
     height: $pageHeight;
   }
@@ -78,6 +78,10 @@
     a {
       margin: auto;
       width: 40%;
+
+      &:hover {
+        transform: scale(1.2);
+      }
 
       img {
         margin: 1rem auto;

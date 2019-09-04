@@ -3,10 +3,11 @@
  
   section {
     display: grid;
-    grid-template-areas: 'listen pic1'
+    grid-template-areas: 'logo logo'
+    'listen pic1'
     'name pic2';
     grid-template-columns: 55% 45%;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 10% 45% 45%;
     height: $pageHeight;
     
     h1 {
@@ -34,6 +35,19 @@
       .listen-logo {
         margin: 1rem 0;
         width: 4rem;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .navlink {
+      grid-area: logo;
+      margin: auto;
+      
+      .logo {
+        width: $logoWidth;
       }
     }
   
@@ -52,10 +66,6 @@
         grid-area: pic2;
         margin-top: 1rem;
       }
-    }
-
-    .logo {
-      width: $logoWidth;
     }
   }
 }

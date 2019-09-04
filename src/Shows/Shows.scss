@@ -3,22 +3,28 @@
 
   section {
     display: grid;
-    grid-template-areas: 'shows pic1'
+    grid-template-areas: 'logo logo'
+    'shows pic1'
     'name pic2';
     grid-template-columns: 60% 40%;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 10% 45% 45%;
     height: $pageHeight;
   
     h1 {
-      color: $transparentMedAccent;
+      color: $transparentLightAccent;
       font-size: $nameSize;
       grid-area: name;
       margin: 0;
       text-transform: uppercase;
     }
 
-    .logo {
-      width: $logoWidth;
+    .navlink {
+      grid-area: logo;
+      margin: auto;
+
+      .logo {
+        width: $logoWidth;
+      }
     }
 
     .pic1 {
@@ -47,7 +53,7 @@
 
       h3 {
         font-size: 2rem;
-        color: $medAccent;
+        color: $lightAccent;
       }
     }
   }

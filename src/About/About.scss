@@ -1,0 +1,189 @@
+.About {
+  color: white;
+  padding: 10px;
+
+  .logo {
+    margin: 0 auto;
+    grid-area: logo;
+    
+    img {
+      width: 6rem;
+    }
+  }
+
+  section {
+    height: $pageHeight;
+    display: grid;
+    grid-template-areas: 'logo logo'
+    'info info'
+    'name name';
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: 50% 50%;
+        
+    .header-pic {
+      margin: auto;
+      height: 90%;
+    }
+    
+    .band-info {
+      grid-area: info;
+      display: flex;
+      text-align: center;
+    }
+    
+    .info {
+      font-size: .8rem;
+      margin: auto;
+      text-align: justify;
+      width: 40%;
+      
+      span {
+        color: $lightAccent;
+        font-weight: 600;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .members, h1 {
+      grid-area: name;
+      height: 140%;
+    }
+
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      grid-area: name;
+
+      div {
+        margin: auto;
+        height: 50%;
+      }
+    }
+
+    h1 {
+      color: $transparentLightAccent;
+      font-size: $nameSize;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      text-transform: uppercase;
+    }
+
+    .one {
+      display: grid;
+      grid-template-areas: 'pic name'
+      'pic info';
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 20% 80%;
+
+      img {
+        grid-area: pic;
+        width: 90%;
+      }
+
+      h4 {
+        grid-area: name;
+        margin-left: .5rem;
+      }
+
+      p {
+        grid-area: info;
+        margin: .5rem;
+      }
+    }
+
+    .two {
+      display: grid;
+      grid-template-areas: 'name pic'
+      'info pic';
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 20% 80%;
+      margin: auto 0;
+      text-align: right;
+
+      img {
+        grid-area: pic;
+        width: 90%;
+      }
+
+      h4 {
+        grid-area: name;
+        margin-right: .5rem;
+      }
+
+      p {
+        grid-area: info;
+        margin-right: .5rem;
+      }
+    }
+
+    .three {
+      display: grid;
+      grid-template-areas: 'pic name'
+      'pic info';
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 20% 80%;
+
+      img {
+        grid-area: pic;
+        width: 90%;
+      }
+
+      h4 {
+        grid-area: name;
+        margin-left: .5rem;
+      }
+
+      p {
+        grid-area: info;
+        margin-left: .5rem;
+      }
+    }
+
+    .four {
+      display: grid;
+      grid-template-areas: 'name pic'
+      'info pic';
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 20% 80%;
+      margin: auto 0;
+      text-align: right;
+
+      img {
+        grid-area: pic;
+        width: 90%;
+      }
+
+      h4 {
+        grid-area: name;
+        margin-right: .5rem;
+      }
+
+      p {
+        grid-area: info;
+        margin-right: .5rem;
+      }
+    }
+    
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .one, .two, .three, .four {
+      font-size: .8rem;
+      height: 10%;
+      width: 45%;
+      
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
