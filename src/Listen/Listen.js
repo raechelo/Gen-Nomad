@@ -16,11 +16,11 @@ export default function Listen() {
     <section className="Listen">
       <Nav />
       <section>
+        <NavLink to='/' className="navlink"><img src={logo} alt="Generation Nomad logo" className="logo"  /></NavLink>
         <div className="listen-column">
-          <NavLink to='/' className="navlink"><img src={logo} alt="Generation Nomad logo" className="logo"  /></NavLink>
           <div className="listen-row">
             <a href="https://open.spotify.com/artist/4MaisRJo6Z8VaLH382HvMj?si=YUZu_3E3RSOIQLDrZAZReA" alt="listen to Generation Nomad on Spotify" target="blank">
-                <img src={spotifyLogo} alt="Generation Nomad on Spotify" className="listen-logo" />
+              <img src={spotifyLogo} alt="Generation Nomad on Spotify" className="listen-logo" />
             </a>
             <a href="https://music.apple.com/us/album/wash-away-ep/1378025440" alt="Listen to Generation Nomad on iTunes" target="blank">
               <img src={appleLogo} alt="Generation Nomad on iTunes" className="listen-logo" />
@@ -36,7 +36,7 @@ export default function Listen() {
             </a>
           </div>
           <div>
-            <iframe src="https://open.spotify.com/embed/artist/4MaisRJo6Z8VaLH382HvMj" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/artist/4MaisRJo6Z8VaLH382HvMj" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="Listen to Generation Nomad on Spotify now"></iframe>
           </div>
         </div>
         <div className="align-right">

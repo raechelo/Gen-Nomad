@@ -1,0 +1,76 @@
+.Press {
+  padding: 10px;
+
+  section {
+    display: grid;
+    grid-template-areas: 'logo logo logo'
+    'info info pic1'
+    'name name pics';
+    grid-template-columns: 55% 25% 20%;
+    grid-template-rows: 10% 45% 45%;
+    height: $pageHeight;
+
+    .logo {
+      grid-area: logo;
+      margin: auto;
+      
+      img {
+        width: $logoWidth;
+      }
+    }
+
+    .inline-header {
+      display: inline-block;
+
+      h4 {
+        color: white;
+        margin: .5rem;
+        text-align: left;
+      }
+    }
+
+    .align-right {
+      display: flex;
+      justify-content: flex-end;
+      margin: .5rem 0;
+    }
+
+    .pics-div {
+      display: flex;
+      justify-content: flex-end;
+      grid-area: pics;
+    }
+
+    .pic1 {
+      grid-area: pic1;
+      height: 100%;
+      margin: .5rem;
+    }
+
+    .pic2, .pic3 {
+      margin: .5rem;
+      height: 100%;
+    }
+
+    .pic2 {
+      height: 120%;
+    }
+  
+    .podcast-logo {
+      width: 10rem;
+    }
+
+    .center-podcast-logo {
+      grid-area: info;
+      text-align: center;
+    }
+
+    h1 {
+      color: $transparentLightAccent;
+      grid-area: name;
+      font-size: $nameSize;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+}
