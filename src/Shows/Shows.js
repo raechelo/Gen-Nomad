@@ -16,10 +16,10 @@ export default function Shows() {
             <h3>Shows</h3>
             <p>Check back soon for our upcoming shows!</p>
           </div>
-        <div className="right-align">
+        <div className="right-align div-pic1">
           <img src={setPhoto} alt='Generation Nomad on set' className='pic1' />
         </div>
-        <div className="right-align">
+        <div className="right-align div-pic2">
           <img src={bassistImg} alt='Generation Nomad Bassist' className='pic2' />
         </div>
         <h1>generation nomad</h1>

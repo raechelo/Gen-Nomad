@@ -56,7 +56,14 @@
         font-size: 7rem;
       }
     }
+  }
 
+  .Shows {
+    section {
+      h1 {
+        font-size: 7rem;
+      }
+    }
   }
 }
 
@@ -130,6 +137,16 @@
        }
     }
   }
+
+  .Shows {
+    section {
+      grid-template-columns: 40% 60%;
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,6 +173,30 @@
       .nav-list {
         display: flex;
         justify-content: space-between;
+      }
+    }
+  }
+
+  .Shows {
+    section {
+      grid-template-areas: 'logo logo'
+      'shows shows'
+      'pic1 pic2'
+      'name name';
+      grid-template-rows: 10% 30% 30% 30%;
+      grid-template-columns: 60% 40%;
+
+      .pic2 {
+        margin: auto;
+      }
+
+      .pic1 {
+        height: 100%;
+        width: auto;
+      }
+
+      h1 {
+        font-size: 4rem;
       }
     }
   }
@@ -233,6 +274,50 @@
       font-size: .6rem;
     }
   }
+
+  .Shows {
+    nav {
+      font-size: .6rem;
+    }
+
+    section {
+
+      grid-template-areas: 'logo logo'
+      'shows shows'
+      'pic1 pic1'
+      'pic2 pic2'
+      'name name';
+      // grid-template-rows: 5% 25% 30% 30% 10%;
+
+      .div-pic2 {
+        grid-area: pic2;
+
+        img {
+          height: 90%;
+        }
+      }
+
+      .div-pic1 {
+        grid-area: pic1;
+
+        img {
+          margin: auto;
+          height: 90%;
+        }
+      }
+
+      .navlink {
+        
+        .logo {
+          width: 4rem;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -251,7 +336,7 @@
     }
 
     section {
-      
+
       .navlink {
 
         .logo {
