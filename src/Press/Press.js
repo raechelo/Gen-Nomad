@@ -1,7 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
+import ReactTooltip from 'react-tooltip';
 import Nav from './../Nav/Nav';
 import logo from '../assets/GENNOMADLOGO.png';
-import { NavLink } from 'react-router-dom';
 import swallowHillLogo from './../assets/swallowhill.png';
 import lizzyHeadshot from './../assets/lizzy-headshot2.jpg';
 import single from './../assets/single-gennomad.jpg';
@@ -15,8 +16,9 @@ export default function Press() {
         <NavLink to='/' className="navlink logo"><img src={logo} alt="Generation Nomad logo"  /></NavLink>
         <div className="center-podcast-logo">
           <a href="https://hwcdn.libsyn.com/p/8/0/4/80426234aac139dd/Front_Row_Podcast_-_Episode_40_-_Pete_Henriksen_and_Generation_Nomad.mp3?c_id=21269616&cs_id=21269616&expiration=1566926121&hwt=e1f611ff3dbf8c309a31af0ff70f63cd" alt="Listen to Generation Nomad on Swallow Hill Music's Front Row Podcast" target="blank">
-            <img src={swallowHillLogo} alt="Swallow Hill Music logo" className="podcast-logo" />
+            <img src={swallowHillLogo} alt="Swallow Hill Music logo" className="podcast-logo" data-tip data-for="podcast-tip" />
           </a>
+          <ReactTooltip id='podcast-tip' effect="float" place="top" className="modal-tooltip">Click to listen now!</ReactTooltip>
           <div className="inline-header">
             <h4>Swallow Hill Music - Front Row Podcast</h4>
             <h4>May 29, 2018</h4>

@@ -6,9 +6,10 @@
     grid-template-areas: 'logo logo'
     'listen pic1'
     'name pic2';
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 10% 45% 45%;
     height: $pageHeight;
+    overflow: scroll;
     
     h1 {
       color: $transparentLightAccent;
